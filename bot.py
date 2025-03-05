@@ -21,7 +21,7 @@ dp = Dispatcher()
 
 async def generete_image(prompt: str) -> str:
     try:
-        response = openai.Image.create(
+        response = openai.Image.generate(
             prompt=prompt,
             n=1,
             size="256x256"
